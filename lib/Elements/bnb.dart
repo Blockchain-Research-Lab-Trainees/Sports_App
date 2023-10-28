@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sports_app/home.dart';
+import 'package:sports_app/Pages/Health.dart';
 
 // class BottomNavBar extends StatelessWidget {
 //   const BottomNavBar({super.key});
@@ -66,7 +66,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
       body: <Widget>[
         Container(
           alignment: Alignment.center,
-          child: const Home(),
+          child: Home(),
         ),
         Container(
           color: Colors.green,
