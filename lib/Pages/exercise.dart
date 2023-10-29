@@ -33,6 +33,7 @@ class _ExerciseNamesState extends State<ExerciseNames> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            SizedBox(height: 40),
             Text(
               'MUSCLE EXERCISES',
               style: TextStyle(fontSize: 30),

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:sports_app/Pages/health.dart';
 import 'package:sports_app/Pages/exercise.dart';
 import 'package:sports_app/Pages/profile.dart';
+// import 'package:sports_app/Pages/Live%20Score/livescore.dart';
+
 // ignore_for_file: prefer_const_constructors
 
 // class BottomNavBar extends StatelessWidget {
@@ -51,14 +53,22 @@ class _BottomNavBarState extends State<BottomNavBar> {
         },
         indicatorColor: Colors.greenAccent[700],
         selectedIndex: currentPageIndex,
-        destinations: const <Widget>[
+        destinations: const [
           NavigationDestination(
             icon: Icon(Icons.monitor_heart),
             label: 'Health',
           ),
           NavigationDestination(
+            icon: Icon(Icons.sports_gymnastics_rounded),
+            label: 'Exercise',
+          ),
+          NavigationDestination(
             icon: Icon(Icons.run_circle_outlined),
             label: 'Sports',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.scoreboard_rounded),
+            label: 'Live Score',
           ),
           NavigationDestination(
             icon: Icon(Icons.person_rounded),
@@ -75,6 +85,16 @@ class _BottomNavBarState extends State<BottomNavBar> {
             color: Colors.green,
             alignment: Alignment.center,
             child: ExerciseNames()),
+        Container(
+          color: Colors.blue,
+          alignment: Alignment.center,
+          child: const Text('Sensor'),
+        ),
+        Container(
+          color: Colors.blue,
+          alignment: Alignment.center,
+          // child: Live(),
+        ),
         Container(
           color: Colors.blue,
           alignment: Alignment.center,
