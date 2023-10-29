@@ -21,6 +21,7 @@ class _neckState extends State<neck> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: ListView.builder(
         itemCount: names.length,
         itemBuilder: (context, index) {

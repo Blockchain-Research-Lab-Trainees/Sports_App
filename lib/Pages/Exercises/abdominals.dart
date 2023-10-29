@@ -21,6 +21,7 @@ class _AbdominalsState extends State<Abdominals> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: ListView.builder(
         itemCount: names.length,
         itemBuilder: (context, index) {

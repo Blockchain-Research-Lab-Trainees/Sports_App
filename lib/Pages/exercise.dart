@@ -168,7 +168,7 @@ class Block extends StatelessWidget {
               ));
         },
         style: ElevatedButton.styleFrom(
-            minimumSize: Size(MediaQuery.of(context).size.width * 0.25,
+            minimumSize: Size(MediaQuery.of(context).size.width * 0.4,
                 MediaQuery.of(context).size.height * 0.25)),
         child: Center(
           child: Text(title),

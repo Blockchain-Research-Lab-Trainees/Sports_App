@@ -21,6 +21,7 @@ class _AdductorsState extends State<Adductors> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: ListView.builder(
         itemCount: names.length,
         itemBuilder: (context, index) {
