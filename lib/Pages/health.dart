@@ -16,12 +16,14 @@ class Home extends StatelessWidget {
           ),
           SizedBox(height: 20),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Block(title: 'Heart Rate'),
               Block(title: 'Daily Task'),
             ],
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Block(title: 'Weight'),
               Block(title: 'Calories/Sleep'),

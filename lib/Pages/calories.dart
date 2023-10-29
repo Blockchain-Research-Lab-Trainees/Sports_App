@@ -11,6 +11,7 @@ class Cal extends StatefulWidget {
 
 class _CalState extends State<Cal> {
   List<dynamic> Exercise = [];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,14 +26,14 @@ class _CalState extends State<Cal> {
     );
   }
 
-  void fetchCal() async {
+  Future<void> fetchCal() async {
     const url = "https://api.api-ninjas.com/v1/caloriesburned?activity=";
     final uri = Uri.parse(url);
     final response = await http.get(uri);
     final body = response.body;
     final json = jsonDecode(body);
-    // setState(({
-    //   Exercise = json['name'],
-    // }));
+    setState(() {
+      Exercise = json['name'];
+    });
   }
 }
