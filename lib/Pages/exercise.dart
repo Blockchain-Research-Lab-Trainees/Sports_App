@@ -1,5 +1,24 @@
+import 'dart:convert';
+
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'biceps.dart';
+import 'package:sports_app/Pages/Exercises/biceps.dart';
+import 'package:sports_app/Pages/Exercises/calves.dart';
+import 'package:sports_app/Pages/Exercises/abductors.dart';
+import 'package:sports_app/Pages/Exercises/adductors.dart';
+import 'Exercises/chest.dart';
+import 'Exercises/abdominals.dart';
+import 'Exercises/forearms.dart';
+import 'Exercises/glutes.dart';
+import 'Exercises/hamstrings.dart';
+import 'Exercises/lats.dart';
+import 'Exercises/lowerBack.dart';
+import 'Exercises/middleBack.dart';
+import 'Exercises/neck.dart';
+import 'Exercises/triceps.dart';
+import 'Exercises/traps.dart';
+import 'Exercises/quadriceps.dart';
+// ignore_for_file: prefer_const_constructors
 
 class ExerciseNames extends StatefulWidget {
   const ExerciseNames({Key? key}) : super(key: key);
@@ -27,11 +46,11 @@ class _ExerciseNamesState extends State<ExerciseNames> {
               children: [
                 Block(
                   title: 'Abdominals',
-                  path: Biceps(),
+                  path: Abdominals(),
                 ),
                 Block(
                   title: 'Abductors',
-                  path: Biceps(),
+                  path: Abductors(),
                 ),
               ],
             ),
@@ -40,7 +59,7 @@ class _ExerciseNamesState extends State<ExerciseNames> {
               children: [
                 Block(
                   title: 'Adductors',
-                  path: Biceps(),
+                  path: Adductors(),
                 ),
                 Block(
                   title: 'Biceps',
@@ -53,11 +72,11 @@ class _ExerciseNamesState extends State<ExerciseNames> {
               children: [
                 Block(
                   title: 'Calves',
-                  path: Biceps(),
+                  path: Calves(),
                 ),
                 Block(
                   title: 'Chest',
-                  path: Biceps(),
+                  path: Chest(),
                 ),
               ],
             ),
@@ -66,11 +85,11 @@ class _ExerciseNamesState extends State<ExerciseNames> {
               children: [
                 Block(
                   title: 'Forearms',
-                  path: Biceps(),
+                  path: Fore(),
                 ),
                 Block(
                   title: 'Glutes',
-                  path: Biceps(),
+                  path: Glute(),
                 ),
               ],
             ),
@@ -79,11 +98,11 @@ class _ExerciseNamesState extends State<ExerciseNames> {
               children: [
                 Block(
                   title: 'Hamstrings',
-                  path: Biceps(),
+                  path: hamstrings(),
                 ),
                 Block(
                   title: 'Lats',
-                  path: Biceps(),
+                  path: Lats(),
                 ),
               ],
             ),
@@ -92,11 +111,11 @@ class _ExerciseNamesState extends State<ExerciseNames> {
               children: [
                 Block(
                   title: 'Lower_back',
-                  path: Biceps(),
+                  path: lower(),
                 ),
                 Block(
                   title: 'Middle_back',
-                  path: Biceps(),
+                  path: mid(),
                 ),
               ],
             ),
@@ -105,11 +124,11 @@ class _ExerciseNamesState extends State<ExerciseNames> {
               children: [
                 Block(
                   title: 'Neck',
-                  path: Biceps(),
+                  path: neck(),
                 ),
                 Block(
                   title: 'Quadriceps',
-                  path: Biceps(),
+                  path: Quadriceps(),
                 ),
               ],
             ),
@@ -118,11 +137,11 @@ class _ExerciseNamesState extends State<ExerciseNames> {
               children: [
                 Block(
                   title: 'Traps',
-                  path: Biceps(),
+                  path: Traps(),
                 ),
                 Block(
                   title: 'Triceps',
-                  path: Biceps(),
+                  path: Triceps(),
                 ),
               ],
             ),
