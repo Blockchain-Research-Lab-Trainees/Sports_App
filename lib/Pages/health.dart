@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sports_app/Elements/bnb.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});

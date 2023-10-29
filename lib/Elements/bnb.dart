@@ -72,10 +72,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
           child: Home(),
         ),
         Container(
-          color: Colors.green,
-          alignment: Alignment.center,
-          child: ExerciseNames()),
-        ),
+            color: Colors.green,
+            alignment: Alignment.center,
+            child: ExerciseNames()),
         Container(
           color: Colors.blue,
           alignment: Alignment.center,
