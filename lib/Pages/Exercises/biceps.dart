@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:sports_app/Pages/directions.dart';
 
-class ExerciseNames extends StatefulWidget {
-  const ExerciseNames({Key? key}) : super(key: key);
+class Biceps extends StatefulWidget {
+  const Biceps({Key? key}) : super(key: key);
 
   @override
-  _ExerciseNamesState createState() => _ExerciseNamesState();
+  _BicepsState createState() => _BicepsState();
 }
 
-class _ExerciseNamesState extends State<ExerciseNames> {
+class _BicepsState extends State<Biceps> {
   List<dynamic> names = [];
 
   void initState() {

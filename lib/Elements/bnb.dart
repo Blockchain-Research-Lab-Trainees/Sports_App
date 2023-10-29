@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sports_app/Pages/health.dart';
-import 'package:sports_app/Pages/exercise.dart';
+import 'package:sports_app/Pages/Exercises/exercise.dart';
 import 'package:sports_app/Pages/profile.dart';
 // ignore_for_file: prefer_const_constructors
 
