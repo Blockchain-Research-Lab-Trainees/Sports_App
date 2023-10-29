@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sports_app/Pages/Health.dart';
+import 'package:sports_app/Pages/Exercise.dart';
+// ignore_for_file: prefer_const_constructors
 
 // class BottomNavBar extends StatelessWidget {
 //   const BottomNavBar({super.key});
@@ -71,7 +73,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
         Container(
           color: Colors.green,
           alignment: Alignment.center,
-          child: const Text('Page 2'),
+          child: ExerciseNames(),
         ),
         Container(
           color: Colors.blue,
