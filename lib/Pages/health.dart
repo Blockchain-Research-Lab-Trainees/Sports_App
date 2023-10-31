@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Calories.dart';
 import 'package:sports_app/Pages/heartbeat.dart';
+import 'package:sports_app/Pages/todo.dart';
 // ignore_for_file: prefer_const_constructors
 
 class Home extends StatelessWidget {
@@ -22,7 +23,10 @@ class Home extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Block(title: 'Heart Rate', path: heart()),
-              Block(title: 'Daily Task'),
+              Block(
+                title: 'Daily Task',
+                path: Check(),
+              ),
             ],
           ),
           Row(
@@ -54,8 +58,8 @@ class Block extends StatelessWidget {
               context, MaterialPageRoute(builder: (context) => path));
         },
         style: ElevatedButton.styleFrom(
-            minimumSize: Size(MediaQuery.of(context).size.width * 0.05,
-                MediaQuery.of(context).size.height * 0.05)),
+            minimumSize: Size(MediaQuery.of(context).size.width * 0.4,
+                MediaQuery.of(context).size.height * 0.1)),
         child: Center(
           child: Text(title),
         ),

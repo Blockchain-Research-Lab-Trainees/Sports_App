@@ -12,7 +12,11 @@ class FirstPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('lib/assets/sport.png'),
+            Image.asset(
+              'lib/assets/sport.png',
+              height: MediaQuery.of(context).size.height * 0.5,
+              // width: MediaQuery.of(context).size.width,
+            ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(

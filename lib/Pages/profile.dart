@@ -7,58 +7,61 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              "MY PROFILE",
-              style: TextStyle(
-                fontSize: 34,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            SizedBox(
-              height: 30,
-            ),
-            CircleAvatar(
-              radius: 75,
-            ),
-            SizedBox(height: 20),
-            Text(
-              "USER-NAME",
-              style: TextStyle(
-                fontSize: 24,
-              ),
-            ),
-            SizedBox(height: 10),
-            Text(
-              "FAV_SPORT",
-              style: TextStyle(
-                fontSize: 16,
-                fontStyle: FontStyle.italic,
-              ),
-            ),
-            SizedBox(height: 20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  Icons.location_on,
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(height: 40),
+              Text(
+                "MY PROFILE",
+                style: TextStyle(
+                  fontSize: 34,
+                  fontWeight: FontWeight.bold,
                 ),
-                Text("India"),
-              ],
-            ),
-            SizedBox(height: 40),
-            TextButton(
-              onPressed: () {
-                Exit(context);
-              },
-              child: Text(
-                "Exit",
-                style: TextStyle(fontSize: 16),
               ),
-            ),
-          ],
+              SizedBox(
+                height: 30,
+              ),
+              CircleAvatar(
+                radius: 75,
+              ),
+              SizedBox(height: 20),
+              Text(
+                "USER-NAME",
+                style: TextStyle(
+                  fontSize: 24,
+                ),
+              ),
+              SizedBox(height: 10),
+              Text(
+                "FAV_SPORT",
+                style: TextStyle(
+                  fontSize: 16,
+                  fontStyle: FontStyle.italic,
+                ),
+              ),
+              SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.location_on,
+                  ),
+                  Text("India"),
+                ],
+              ),
+              SizedBox(height: 40),
+              TextButton(
+                onPressed: () {
+                  Exit(context);
+                },
+                child: Text(
+                  "Exit",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

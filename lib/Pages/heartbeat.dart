@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:heart_bpm/heart_bpm.dart';
-import 'package:camera/camera.dart';
+// ignore_for_file: prefer_const_constructors
 
 class heart extends StatefulWidget {
   @override

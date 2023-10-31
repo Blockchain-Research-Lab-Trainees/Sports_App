@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sports_app/Pages/health.dart';
 import 'package:sports_app/Pages/exercise.dart';
 import 'package:sports_app/Pages/profile.dart';
+import 'package:sports_app/Pages/sports.dart';
 // import 'package:sports_app/Pages/Live%20Score/livescore.dart';
 
 // ignore_for_file: prefer_const_constructors
@@ -88,7 +89,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
         Container(
           color: Colors.blue,
           alignment: Alignment.center,
-          child: const Text('Sensor'),
+          child: Shake(),
+          // child: const Text('Sensor'),
         ),
         Container(
           color: Colors.blue,
