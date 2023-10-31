@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'Calories.dart';
-import 'package:sports_app/Pages/heartbeat.dart';
-import 'package:sports_app/Pages/todo.dart';
+import '../Calories.dart';
+import 'package:sports_app/Pages/Bottom%20Nav%20Bar%20Pages/Health%20Sub-Pages/heartbeat.dart';
+import 'package:sports_app/Pages/Bottom%20Nav%20Bar%20Pages/Health%20Sub-Pages/todo.dart';
 // ignore_for_file: prefer_const_constructors
 
 class Home extends StatelessWidget {

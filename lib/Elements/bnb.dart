@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:sports_app/Pages/health.dart';
-import 'package:sports_app/Pages/exercise.dart';
-import 'package:sports_app/Pages/profile.dart';
-import 'package:sports_app/Pages/sports.dart';
+import 'package:sports_app/Pages/Bottom%20Nav%20Bar%20Pages/health.dart';
+import 'package:sports_app/Pages/Bottom%20Nav%20Bar%20Pages/exercise.dart';
+import 'package:sports_app/Pages/Bottom%20Nav%20Bar%20Pages/profile.dart';
+import 'package:sports_app/Pages/Bottom%20Nav%20Bar%20Pages/sports.dart';
 // import 'package:sports_app/Pages/Live%20Score/livescore.dart';
 
 // ignore_for_file: prefer_const_constructors
@@ -77,7 +77,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
           ),
         ],
       ),
-      body: <Widget>[
+      body: [
         Container(
           alignment: Alignment.center,
           child: Home(),

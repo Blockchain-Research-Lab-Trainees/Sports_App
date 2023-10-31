@@ -1,17 +1,19 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-// ignore_for_file: prefer_const_constructors
 
 class Cal extends StatefulWidget {
-  const Cal({Key? key}) : super(key: key);
+  const Cal({Key? key});
 
   @override
   _CalState createState() => _CalState();
 }
 
 class _CalState extends State<Cal> {
-  Future<List> fetchData() async {
+  Future<void>? _futureData;
+  List<dynamic> names = [];
+
+  Future<void> fetchData() async {
     final String apikey = 'd5ee95a7e8mshf13ffce96bc018cp12c43ajsnf25a71a40444';
     final String apihost = 'calories-burned-by-api-ninjas.p.rapidapi.com';
     const url = 'https://api.api-ninjas.com/v1/caloriesburned?activity=skiing';
@@ -22,15 +24,27 @@ class _CalState extends State<Cal> {
     final body = response.body;
     final jsonData = jsonDecode(body);
 
-    return jsonData;
+    if (response.statusCode == 200) {
+      setState(() {
+        names = jsonData;
+      });
+    } else {
+      print('error');
+    }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _futureData = fetchData();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: FutureBuilder<List>(
-        future: fetchData(),
+      body: FutureBuilder<void>(
+        future: _futureData,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(
@@ -41,7 +55,6 @@ class _CalState extends State<Cal> {
               child: Text('Error: ${snapshot.error}'),
             );
           } else {
-            List<dynamic> names = [];
             return ListView.builder(
               itemCount: names.length,
               itemBuilder: (context, index) {

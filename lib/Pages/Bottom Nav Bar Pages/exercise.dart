@@ -3,18 +3,18 @@ import 'package:sports_app/Pages/Exercises/biceps.dart';
 import 'package:sports_app/Pages/Exercises/calves.dart';
 import 'package:sports_app/Pages/Exercises/abductors.dart';
 import 'package:sports_app/Pages/Exercises/adductors.dart';
-import 'Exercises/chest.dart';
-import 'Exercises/abdominals.dart';
-import 'Exercises/forearms.dart';
-import 'Exercises/glutes.dart';
-import 'Exercises/hamstrings.dart';
-import 'Exercises/lats.dart';
-import 'Exercises/lowerBack.dart';
-import 'Exercises/middleBack.dart';
-import 'Exercises/neck.dart';
-import 'Exercises/triceps.dart';
-import 'Exercises/traps.dart';
-import 'Exercises/quadriceps.dart';
+import '../Exercises/chest.dart';
+import '../Exercises/abdominals.dart';
+import '../Exercises/forearms.dart';
+import '../Exercises/glutes.dart';
+import '../Exercises/hamstrings.dart';
+import '../Exercises/lats.dart';
+import '../Exercises/lowerBack.dart';
+import '../Exercises/middleBack.dart';
+import '../Exercises/neck.dart';
+import '../Exercises/triceps.dart';
+import '../Exercises/traps.dart';
+import '../Exercises/quadriceps.dart';
 // ignore_for_file: prefer_const_constructors
 
 class ExerciseNames extends StatefulWidget {
